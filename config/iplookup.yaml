@@ -1,0 +1,45 @@
+sources:
+    - webscan
+    - rapiddns
+    - ip138
+    - yougetsignal
+    - aizhan
+    - chinaz
+    - viewdns
+    - c99
+    - bugscaner
+    - hackertarget
+    - dnslytics
+    - omnisint
+    - dnsgrep
+    - domaintools
+    - securitytrails
+    - fofa
+    - shodan
+all-sources:
+    - webscan
+    - rapiddns
+    - ip138
+    - yougetsignal
+    - aizhan
+    - c99
+    - chinaz
+    - viewdns
+    - bugscaner
+    - hackertarget
+    - dnslytics
+    - omnisint
+    - dnsgrep
+    - domaintools
+    - securitytrails
+    - fofa
+    - shodan
+proxy: "http://127.0.0.1:8080/"
+dnsgrep: []
+c99:
+    - x-x-x-x
+shodan:
+    - ZqweV2nasdiKGxJDz9buYLc78qKxG5Mq
+fofa:
+    - sdq@163.com:dqweqwe
+iplookup-version: "1.0"
