@@ -1,7 +1,7 @@
 # iplookup
 
 ## 简介
-IP反查域名工具简称：IPgo，模仿(抄袭)subfinder实现
+IP反查域名工具,模仿(抄袭)subfinder实现
 
 ## 主要接口
 
@@ -10,7 +10,7 @@ IP反查域名工具简称：IPgo，模仿(抄袭)subfinder实现
 - [x] [ip138](https://site.ip138.com/)  
 - [x] [yougetsignal](https://www.yougetsignal.com/)  
 - [x] [aizhan](https://dns.aizhan.com/)  
-- [x] [C99](https://api.c99.nl/)
+- [x] [c99](https://api.c99.nl/)
 - [x] [chinaz](http://s.tool.chinaz.com)  
 - [x] [viewdns](https://viewdns.info/)  
 - [x] [bugscaner](http://dns.bugscaner.com/)  
@@ -20,9 +20,10 @@ IP反查域名工具简称：IPgo，模仿(抄袭)subfinder实现
 - [x] [dnsgrep](https://www.dnsgrep.cn/)  
 - [x] [domaintools](https://reverseip.domaintools.com/)  
 - [x] [securitytrails](https://securitytrails.com/)
-- [ ] [ipip](https://tools.ipip.net/ipdomain.php)
-- [ ] [fofa](https://fofa.so/)
+- [x] [fofa](https://fofa.so/)
+- [x] [shodan](https://api.shodan.io/dns/reverse)
 - [ ] [quake](https://quake.360.cn/)
+- [ ] [ipip](https://tools.ipip.net/ipdomain.php)
 
 
 ## 使用说明
@@ -40,6 +41,7 @@ IP反查域名工具简称：IPgo，模仿(抄袭)subfinder实现
 - [C99](https://api.c99.nl/)
 - [Fofa](https://fofa.so/)
 - [Quake](https://quake.360.cn/)
+- [Shodan](https://www.shodan.io/)
 
   
 ## usege  
@@ -149,6 +151,26 @@ dnsgrep: []
 c99:
     - XXXXX-XXXXX-XXXXX-XXXXX
 iplookup-version: "1.0"
+```
+
+包引用,配置文件修改为```config/iplookup.yaml```
+```golang
+package main
+
+import (
+	"fmt"
+	"github.com/Lengso/iplookup"
+)
+
+func main() {
+	output := iplookup.GetDomain("1.1.1.1")
+
+	for _,domain := range output{
+		fmt.Println(domain)
+	}
+
+}
+
 ```
 
 ## 参考
