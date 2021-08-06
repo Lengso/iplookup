@@ -37,9 +37,9 @@ all-sources:
 proxy: "http://127.0.0.1:8080/"
 dnsgrep: []
 c99:
-    - x-x-x-x
+    - XXXXX-XXXXX-XXXXX-XXXXX
 shodan:
-    - ZqweV2nasdiKGxJDz9buYLc78qKxG5Mq
+    - XXXXX-XXXXX-XXXXX-XXXXX
 fofa:
-    - sdq@163.com:dqweqwe
-iplookup-version: "1.0"
+    - XXXXX@gmail.com:xxx
+iplookup-version: "1.1"

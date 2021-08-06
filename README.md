@@ -71,7 +71,7 @@ C:\Users\administrator
  | | '_ \| |/ _ \ / _ \| |/ / | | | '_ \
  | | |_) | | (_) | (_) |   <| |_| | |_) |
  |_| .__/|_|\___/ \___/|_|\_\\__,_| .__/
-   |_|                            |_|      v1.0
+   |_|                            |_|      v1.1
 
 [FTL] Program exiting: no input list provided
 
@@ -115,42 +115,50 @@ Usage of ipgo:
 一个示例配置文件 `$HOME/.config/iplookup/config.yaml`
 ```yaml
 sources:
-    - webscan
-    - rapiddns
-    - ip138
-    - yougetsignal
-    - aizhan
-    - chinaz
-    - viewdns
-    - c99
-    - bugscaner
-    - hackertarget
-    - dnslytics
-    - omnisint
-    - dnsgrep
-    - domaintools
-    - securitytrails
+  - webscan
+  - rapiddns
+  - ip138
+  - yougetsignal
+  - aizhan
+  - chinaz
+  - viewdns
+  - c99
+  - bugscaner
+  - hackertarget
+  - dnslytics
+  - omnisint
+  - dnsgrep
+  - domaintools
+  - securitytrails
+  - fofa
+  - shodan
 all-sources:
-    - webscan
-    - rapiddns
-    - ip138
-    - yougetsignal
-    - aizhan
-    - c99
-    - chinaz
-    - viewdns
-    - bugscaner
-    - hackertarget
-    - dnslytics
-    - omnisint
-    - dnsgrep
-    - domaintools
-    - securitytrails
-proxy: "http://127.0.0.1:8080/" 
+  - webscan
+  - rapiddns
+  - ip138
+  - yougetsignal
+  - aizhan
+  - c99
+  - chinaz
+  - viewdns
+  - bugscaner
+  - hackertarget
+  - dnslytics
+  - omnisint
+  - dnsgrep
+  - domaintools
+  - securitytrails
+  - fofa
+  - shodan
+proxy: "http://127.0.0.1:8080/"
 dnsgrep: []
 c99:
-    - XXXXX-XXXXX-XXXXX-XXXXX
-iplookup-version: "1.0"
+  - XXXXX-XXXXX-XXXXX-XXXXX
+shodan:
+  - XXXXX-XXXXX-XXXXX-XXXXX
+fofa:
+  - XXXXX@gmail.com:xxx
+iplookup-version: "1.1"
 ```
 
 包引用,配置文件修改为```config/iplookup.yaml```
